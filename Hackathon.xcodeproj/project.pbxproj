@@ -10,10 +10,11 @@
 		78C058912ABB1E2E00323AF9 /* HackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C058902ABB1E2E00323AF9 /* HackathonApp.swift */; };
 		78C058932ABB1E2E00323AF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C058922ABB1E2E00323AF9 /* ContentView.swift */; };
 		78C058952ABB1E3400323AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C058942ABB1E3400323AF9 /* Assets.xcassets */; };
-		78C058982ABB1E3400323AF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C058972ABB1E3400323AF9 /* Preview Assets.xcassets */; };
 		78C058A22ABB1E3500323AF9 /* HackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C058A12ABB1E3500323AF9 /* HackathonTests.swift */; };
 		78C058AC2ABB1E3500323AF9 /* HackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C058AB2ABB1E3500323AF9 /* HackathonUITests.swift */; };
 		78C058AE2ABB1E3500323AF9 /* HackathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C058AD2ABB1E3500323AF9 /* HackathonUITestsLaunchTests.swift */; };
+		78C058BB2ABB21F900323AF9 /* ContentView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C058BA2ABB21F900323AF9 /* ContentView+ViewModel.swift */; };
+		78C058BD2ABB23FD00323AF9 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C058BC2ABB23FD00323AF9 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +39,13 @@
 		78C058902ABB1E2E00323AF9 /* HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonApp.swift; sourceTree = "<group>"; };
 		78C058922ABB1E2E00323AF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78C058942ABB1E3400323AF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		78C058972ABB1E3400323AF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		78C0589D2ABB1E3500323AF9 /* HackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C058A12ABB1E3500323AF9 /* HackathonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonTests.swift; sourceTree = "<group>"; };
 		78C058A72ABB1E3500323AF9 /* HackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C058AB2ABB1E3500323AF9 /* HackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonUITests.swift; sourceTree = "<group>"; };
 		78C058AD2ABB1E3500323AF9 /* HackathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78C058BA2ABB21F900323AF9 /* ContentView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+ViewModel.swift"; sourceTree = "<group>"; };
+		78C058BC2ABB23FD00323AF9 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,20 +96,14 @@
 		78C0588F2ABB1E2E00323AF9 /* Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				78C058942ABB1E3400323AF9 /* Assets.xcassets */,
+				78C058BE2ABB2B0500323AF9 /* Preview Content */,
 				78C058902ABB1E2E00323AF9 /* HackathonApp.swift */,
 				78C058922ABB1E2E00323AF9 /* ContentView.swift */,
-				78C058942ABB1E3400323AF9 /* Assets.xcassets */,
-				78C058962ABB1E3400323AF9 /* Preview Content */,
+				78C058BA2ABB21F900323AF9 /* ContentView+ViewModel.swift */,
+				78C058BC2ABB23FD00323AF9 /* DataModel.swift */,
 			);
 			path = Hackathon;
-			sourceTree = "<group>";
-		};
-		78C058962ABB1E3400323AF9 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				78C058972ABB1E3400323AF9 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		78C058A02ABB1E3500323AF9 /* HackathonTests */ = {
@@ -125,6 +121,13 @@
 				78C058AD2ABB1E3500323AF9 /* HackathonUITestsLaunchTests.swift */,
 			);
 			path = HackathonUITests;
+			sourceTree = "<group>";
+		};
+		78C058BE2ABB2B0500323AF9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78C058982ABB1E3400323AF9 /* Preview Assets.xcassets in Resources */,
 				78C058952ABB1E3400323AF9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				78C058932ABB1E2E00323AF9 /* ContentView.swift in Sources */,
+				78C058BD2ABB23FD00323AF9 /* DataModel.swift in Sources */,
 				78C058912ABB1E2E00323AF9 /* HackathonApp.swift in Sources */,
+				78C058BB2ABB21F900323AF9 /* ContentView+ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

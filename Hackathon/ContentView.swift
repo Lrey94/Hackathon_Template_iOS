@@ -2,18 +2,15 @@
 //  ContentView.swift
 //  Hackathon
 //
-//  Created by David Jones on 20/09/2023.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = ViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Hello, \(viewModel.appName)!")
         }
         .padding()
     }

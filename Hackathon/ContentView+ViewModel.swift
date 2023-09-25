@@ -2,7 +2,24 @@
 //  ContentView+ViewModel.swift
 //  Hackathon
 //
-//  Created by David Jones on 20/09/2023.
-//
 
 import Foundation
+
+extension ContentView {
+    class ViewModel: ObservableObject {
+        
+        @Published var appName: String
+        
+        init() {
+            appName = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as! String
+        }
+        
+        func loadSomething() {
+            guard let url = URL(string: "") else { return }
+            URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
+                // TODO
+            }).resume()
+        }
+
+    }
+}
